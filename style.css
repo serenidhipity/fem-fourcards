@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+:root {
+    --red:hsl(0, 78%, 62%);
+    --cyan:hsl(180, 62%, 55%);
+    --blue:hsl(212, 86%, 64%);
+    --orange:hsl(34, 97%, 64%);
+    --deepblue:hsl(234, 12%, 34%);
+    --cream:hsl(0, 0%, 98%);
+    --greyishblue:hsl(229, 6%, 66%);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cream);
+}
+
+.main-text {
+    margin: auto;
+    margin-top: 100px;
+    max-width: 600px;
+    text-align: center;
+}
+.main-text h1 {
+    margin:0.1rem 0;
+    font-size: 25px;
+    color: var(--deepblue);
+}
+.main-text h1:first-child {
+    font-weight:200;
+}
+.main-text p {
+padding: 0 21px 60px;
+line-height: 160%;
+color: var(--greyishblue);
+}
+
+.main-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+.card {
+    background-color: #fff;
+    max-width: 400px;
+    border-radius: 7px;
+    margin: 0 10px 25px;
+    box-shadow: 2px 8px 20px -5px var(--greyishblue);
+    padding-bottom: 20px;
+    
+}
+
+.title {
+    text-align: left;
+    padding: 10px 0 0 30px;
+    margin-bottom: 0.2rem;
+    font-size: 22px;
+    color: var(--deepblue);
+}
+
+.text {
+    text-align: left;
+    padding: 0 10px 10px 30px;
+    margin-top: 0,2rem;
+    margin-right: 15px;
+    line-height: 180%;
+    font-size: 15px;
+    color: var(--greyishblue);
+}
+/* .icon {padding: 10px 20px 25px 0; } */
+
+#supervisor {
+    border-top: 5px solid var(--cyan);
+}
+
+#team-builder {
+    border-top: 5px solid var(--red); 
+}
+
+#karma {
+    border-top: 5px solid var(--orange);
+}
+
+#calculator {
+    border-top: 5px solid var(--blue);
+}
+
+@media (min-width: 1025px) {
+    .main-text {
+        margin-top: 50px;
+    }
+    .main-text h1 {
+        font-size:36px;
+    }
+    .main-text p {
+        padding-bottom: 40px;
+    }
+    
+    .main-flex-container {
+        flex-direction: row;
+    }
+
+    .card{
+        margin-right: 20px;
+    }
+}
